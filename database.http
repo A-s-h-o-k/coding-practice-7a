@@ -1,0 +1,46 @@
+###
+//API 1 get players details
+GET http://localhost:3000/players/
+
+
+
+###
+//API 2 get a specific player using player_id
+GET http://localhost:3000/players/1/
+
+
+
+###
+
+//API 3 Update player details using player_id
+PUT http://localhost:3000/players/10/
+Content-Type: application/json
+
+{
+    "playerName":"Raju"
+}
+
+
+
+###
+//API 4 get match details of a specific match
+GET http://localhost:3000/matches/1/
+
+
+
+###
+//API 5 getlist all matches of a player
+GET http://localhost:3000/players/1/matches
+
+
+
+###
+//API 6 get list of players of a specific match
+GET http://localhost:3000/matches/2/players
+
+
+
+###
+//API 7 get player statistics of player
+GET http://localhost:3000/players/1/playerScores
+
